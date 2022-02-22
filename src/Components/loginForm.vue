@@ -45,9 +45,9 @@ export default {
               res.data[id].email === this.inputUserEmail &&
               res.data[id].password === this.inputUserPassword
             ) {
-              this.$store.state.userId = res.data[id].id - 1;
+              this.$store.state.userId = res.data[id].id;
               console.info(this.$store.state.userId);
-              this.$router.push("/Summary");
+              this.$router.push("/Login/Summary");
               return;
             }
           }

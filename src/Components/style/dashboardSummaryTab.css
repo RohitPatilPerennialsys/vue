@@ -1,6 +1,9 @@
- body  {
+body {
+  
+  margin: 0%;
   background: #e5e5e5 !important;
 }
+
 .dash-title {
   /* Dashboard */
   margin: 32px 217px 24px 12px;

@@ -3,10 +3,14 @@
 <template>
   <header>
     <div class="header-left">
-      <img
+      <router-link
+        to="/Login/Summary"
+        tag="img"
         src="/src/assets/images/microBankLogoimg.svg"
         alt="microBankLogoimg"
-      />
+        class="logo"
+      >
+      </router-link>
       <div class="vertical-divider"></div>
       <h1>ABC Pvt. Ltd.</h1>
     </div>
@@ -18,7 +22,9 @@
         <p>{{ firstLetters }}</p>
       </div>
       <div class="drop-arrow">
-        <img src="/src/assets/images/dropArrowimg.svg" />
+        <router-link to="/Login/editProfile">
+          <img src="/src/assets/images/dropArrowimg.svg"
+        /></router-link>
       </div>
     </div>
   </header>

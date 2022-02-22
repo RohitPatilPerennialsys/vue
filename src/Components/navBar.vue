@@ -2,12 +2,12 @@
   <nav class="navigation-bar ">
     <ul>
       <li>
-        <router-link to="/Summary" active-class="summary-active-tab"
+        <router-link to="/Login/Summary" active-class="summary-active-tab"
           >Summary</router-link
         >
       </li>
       <li>
-        <router-link to="/Details" active-class="details-active-tab"
+        <router-link to="/Login/Details" active-class="details-active-tab"
           >Details</router-link
         >
       </li>

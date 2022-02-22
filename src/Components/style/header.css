@@ -16,6 +16,7 @@ header {
 .header-left img {
   width: 151px;
   height: 42px;
+  cursor: pointer;
 }
 .vertical-divider {
   display: none;
@@ -31,7 +32,6 @@ header {
   margin-bottom: 9px;
   line-height: 19px;
   /* identical to box height */
-  display: flex;
   align-items: flex-end;
   color: #1a1a1a;
 }
