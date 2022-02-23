@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  data: function() {
+  data: () => {
     return {
       subscribeServicesArr: [],
       allServicesArr: [],
@@ -105,5 +105,126 @@ export default {
 </script>
 
 <style scoped>
-@import "./style/currentServices.css";
+.current-services-card {
+  height: 375px;
+  margin: 12px 12px 24px 12px;
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.current-services-card h1 {
+  margin: 0px;
+  padding: 24px 0px 0px 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: flex-end;
+  color: #1a1a1a;
+}
+#current-services-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.current-services {
+  padding-top: 26.5px;
+  margin-left: 24px;
+  width: 130px;
+  height: 171.5px;
+}
+.current-services p {
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1a1a1a;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.current-services img {
+  padding: 2.5px 77.5px 0px 0px;
+}
+.current-services .star1 {
+  margin-top: 4px;
+  padding: 2px 0px 3px 2px;
+}
+.current-services .unstar {
+  width: 20px;
+  height: 19px;
+  padding: 2px 0px 3px 2px;
+}
+.star0:hover,
+.star1:hover,
+.star2:hover,
+.star3:hover,
+.star4:hover,
+.star5:hover,
+.star6:hover,
+.star7:hover {
+  cursor: pointer;
+}
+.star0,
+.star1,
+.star2,
+.star3,
+.star4,
+.star5,
+.star6,
+.star7 {
+  font-size: 27px;
+  border: rgba(0, 0, 0, 0.54);
+  background-color: unset;
+  color: #0a8b1f;
+  height: 21px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@media screen and (min-width: 485px) {
+  .current-services-card {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1016px) {
+  .current-services-card {
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 220px;
+  }
+  .current-services {
+    width: 218px;
+    height: 123px;
+    padding-top: 24px;
+  }
+  .current-services img {
+    padding: 2.5px 86.5px 0px 84px;
+  }
+  .current-services p {
+    text-align: center;
+  }
+  .starContainer {
+    margin-left: 60px;
+  }
+  .starrating {
+    width: 170px;
+    height: 24px;
+    margin-left: 40px;
+    margin-right: 0px;
+  }
+  /* .starrating {
+    user-select: none;
+  } */
+  .star0,
+  .star1,
+  .star2,
+  .star3,
+  .star4,
+  .star5,
+  .star6,
+  .star7 {
+    margin-left: 4px;
+  }
+}
 </style>

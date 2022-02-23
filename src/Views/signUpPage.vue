@@ -9,14 +9,25 @@
 <script>
 import MicroBankPoster from "../Components/microBankPoster.vue";
 import CreateAccForm from "../Components/createAccForm.vue";
+
 export default {
   components: {
-    MicroBankPoster: MicroBankPoster,
-    CreateAccForm: CreateAccForm
+    MicroBankPoster,
+    CreateAccForm
   }
 };
 </script>
 
 <style scoped>
-@import "../Components/style/signUpPage.css";
+body {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0%;
+  background: white !important;
+}
+
+.flex {
+  display: flex;
+}
 </style>

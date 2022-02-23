@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  data: function() {
+  data: () => {
     return {
       data: [
         {
@@ -36,6 +36,66 @@ export default {
 };
 </script>
 <style scoped>
-@import "./style/summaryCard.css";
-</style>
+.summary-container {
+  height: 269px;
+  margin: 12px 12px 0px 12px;
+  background: #fff0f3;
+  border: 1px solid rgba(217, 4, 41, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+.summary-container h1 {
+  margin: 24px 225px 0px 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: flex-end;
+  color: #1a1a1a;
+}
 
+.summary-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.summary-card-content {
+  width: 336px;
+  height: 72px;
+  padding: 24px 24px 0px 24px;
+}
+h4 {
+  /* summary card content texts */
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+  margin: 0px;
+}
+h5 {
+  /* summary card content values */
+  margin: 0px;
+  padding-top: 9.5px;
+  width: 75px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+@media screen and (min-width: 698px) {
+  .summary-container {
+    height: 210px;
+  }
+}
+@media screen and (min-width: 1016px) {
+  .summary-container {
+    height: 145px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+</style>

@@ -4,10 +4,16 @@
   </footer>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped>
-@import "./style/footer.css";
+footer {
+  height: 38px;
+  margin-bottom: 0px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+}
+
 </style>
